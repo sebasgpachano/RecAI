@@ -254,6 +254,7 @@
           "Microsoft.EntityFrameworkCore": "10.0.9",
           "Microsoft.Extensions.Configuration.Abstractions": "10.0.9",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.9",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.9",
           "RecAI.Domain": "1.0.0",
           "System.IdentityModel.Tokens.Jwt": "8.19.1"
         },

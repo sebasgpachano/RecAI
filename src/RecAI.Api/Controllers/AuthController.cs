@@ -23,15 +23,7 @@ public class AuthController : ControllerBase
     [ProducesResponseType(StatusCodes.Status409Conflict)]
     public async Task<IActionResult> Register([FromBody] RegisterRequest request)
     {
-        try
-        {
-            var response = await _authService.RegisterAsync(request);
-            return StatusCode(StatusCodes.Status201Created, response);
-        }
-        catch (InvalidOperationException ex)
-        {
-            return Conflict(new { message = ex.Message });
-        }
+        return StatusCode(201, await _authService.RegisterAsync(request));
     }
 
     [HttpPost("login")]
@@ -39,14 +31,6 @@ public class AuthController : ControllerBase
     [ProducesResponseType(StatusCodes.Status401Unauthorized)]
     public async Task<IActionResult> Login([FromBody] LoginRequest request)
     {
-        try
-        {
-            var response = await _authService.LoginAsync(request);
-            return Ok(response);
-        }
-        catch (UnauthorizedAccessException)
-        {
-            return Unauthorized(new { message = "Invalid credentials." });
-        }
+        return Ok(await _authService.LoginAsync(request));
     }
 }

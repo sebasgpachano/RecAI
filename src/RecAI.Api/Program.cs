@@ -7,7 +7,14 @@ using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+        options.JsonSerializerOptions.Converters.Add(
+            new System.Text.Json.Serialization.JsonStringEnumConverter()));
+
+builder.Services.AddExceptionHandler<RecAI.Api.Middleware.GlobalExceptionHandler>();
+builder.Services.AddProblemDetails();
+
 builder.Services.AddOpenApi();
 builder.Services.AddHealthChecks();
 
@@ -28,13 +35,15 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidIssuer = jwtSettings["Issuer"],
             ValidAudience = jwtSettings["Audience"],
             IssuerSigningKey = new SymmetricSecurityKey(
-                Encoding.UTF8.GetBytes(jwtSettings["Key"]!))
+                Encoding.UTF8.GetBytes(jwtSettings["Key"]!)) 
         };
+        options.MapInboundClaims = false;
     });
 
 builder.Services.AddAuthorization();
 
 var app = builder.Build();
+app.UseExceptionHandler();
 
 if (app.Environment.IsDevelopment())
 {
