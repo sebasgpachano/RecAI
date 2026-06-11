@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RecAI.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+82cbbd6b83247273953a4e8c89d2d9a3f0c27911")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+edcd723feb07b13bf94c09e4c19e44647cfdd126")]
 [assembly: System.Reflection.AssemblyProductAttribute("RecAI.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RecAI.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
