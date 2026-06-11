@@ -1,0 +1,15 @@
+C:\Users\sebas\RecAI\src\RecAI.Application\bin\Debug\net10.0\RecAI.Application.deps.json
+C:\Users\sebas\RecAI\src\RecAI.Application\bin\Debug\net10.0\RecAI.Application.dll
+C:\Users\sebas\RecAI\src\RecAI.Application\bin\Debug\net10.0\RecAI.Application.pdb
+C:\Users\sebas\RecAI\src\RecAI.Application\bin\Debug\net10.0\RecAI.Domain.dll
+C:\Users\sebas\RecAI\src\RecAI.Application\bin\Debug\net10.0\RecAI.Domain.pdb
+C:\Users\sebas\RecAI\src\RecAI.Application\obj\Debug\net10.0\RecAI.Application.csproj.AssemblyReference.cache
+C:\Users\sebas\RecAI\src\RecAI.Application\obj\Debug\net10.0\RecAI.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sebas\RecAI\src\RecAI.Application\obj\Debug\net10.0\RecAI.Application.AssemblyInfoInputs.cache
+C:\Users\sebas\RecAI\src\RecAI.Application\obj\Debug\net10.0\RecAI.Application.AssemblyInfo.cs
+C:\Users\sebas\RecAI\src\RecAI.Application\obj\Debug\net10.0\RecAI.Application.csproj.CoreCompileInputs.cache
+C:\Users\sebas\RecAI\src\RecAI.Application\obj\Debug\net10.0\RecAI.Ap.B6FA73FE.Up2Date
+C:\Users\sebas\RecAI\src\RecAI.Application\obj\Debug\net10.0\RecAI.Application.dll
+C:\Users\sebas\RecAI\src\RecAI.Application\obj\Debug\net10.0\refint\RecAI.Application.dll
+C:\Users\sebas\RecAI\src\RecAI.Application\obj\Debug\net10.0\RecAI.Application.pdb
+C:\Users\sebas\RecAI\src\RecAI.Application\obj\Debug\net10.0\ref\RecAI.Application.dll
