@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using RecAI.Application.Interfaces;
 using RecAI.Domain.Entities;
+using RecAI.Domain.Enums;
 
 namespace RecAI.Infrastructure.Persistence.Repositories;
 
@@ -29,4 +30,12 @@ public class RecommendationRepository : IRecommendationRepository
 
     public Task<int> SaveChangesAsync(CancellationToken ct = default) =>
         _context.SaveChangesAsync(ct);
+
+    public async Task<Dictionary<RecommendationStatus, int>> GetStatusCountsForUserAsync(
+    Guid userId, CancellationToken ct = default) =>
+    await _context.Recommendations
+        .Where(r => r.UserId == userId)
+        .GroupBy(r => r.Status)
+        .Select(g => new { Status = g.Key, Count = g.Count() })
+        .ToDictionaryAsync(x => x.Status, x => x.Count, ct);
 }

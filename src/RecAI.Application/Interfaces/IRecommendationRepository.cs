@@ -1,4 +1,5 @@
 using RecAI.Domain.Entities;
+using RecAI.Domain.Enums;
 
 namespace RecAI.Application.Interfaces;
 
@@ -9,4 +10,7 @@ public interface IRecommendationRepository
     Task AddAsync(Recommendation recommendation, CancellationToken ct = default);
     void Remove(Recommendation recommendation);
     Task<int> SaveChangesAsync(CancellationToken ct = default);
+
+    Task<Dictionary<RecommendationStatus, int>> GetStatusCountsForUserAsync(
+        Guid userId, CancellationToken ct = default);
 }
