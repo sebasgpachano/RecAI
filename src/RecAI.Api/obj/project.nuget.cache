@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Hl4EqL6ci50=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\sebas\\RecAI\\src\\RecAI.Api\\RecAI.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sebas\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.5\\microsoft.aspnetcore.openapi.10.0.5.nupkg.sha512",
+    "C:\\Users\\sebas\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512",
+    "C:\\Users\\sebas\\.nuget\\packages\\scalar.aspnetcore\\2.16.3\\scalar.aspnetcore.2.16.3.nupkg.sha512"
+  ],
+  "logs": []
+}

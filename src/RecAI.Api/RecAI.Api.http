@@ -1,0 +1,6 @@
+@RecAI.Api_HostAddress = http://localhost:5189
+
+GET {{RecAI.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "w+6LmAMp7ZE=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\sebas\\RecAI\\src\\RecAI.Infrastructure\\RecAI.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sebas\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\10.0.9\\microsoft.extensions.configuration.abstractions.10.0.9.nupkg.sha512",
+    "C:\\Users\\sebas\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.9\\microsoft.extensions.dependencyinjection.abstractions.10.0.9.nupkg.sha512",
+    "C:\\Users\\sebas\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.9\\microsoft.extensions.primitives.10.0.9.nupkg.sha512"
+  ],
+  "logs": []
+}

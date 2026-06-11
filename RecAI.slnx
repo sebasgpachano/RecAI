@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/RecAI.Api/RecAI.Api.csproj" />
+    <Project Path="src/RecAI.Application/RecAI.Application.csproj" />
+    <Project Path="src/RecAI.Domain/RecAI.Domain.csproj" />
+    <Project Path="src/RecAI.Infrastructure/RecAI.Infrastructure.csproj" />
+  </Folder>
+</Solution>
