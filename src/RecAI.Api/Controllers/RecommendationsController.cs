@@ -16,8 +16,9 @@ public class RecommendationsController : ControllerBase
     public RecommendationsController(IRecommendationService service) => _service = service;
 
     [HttpGet]
-    public async Task<ActionResult<List<RecommendationResponse>>> GetAll(CancellationToken ct)
-        => Ok(await _service.GetAllAsync(User.GetUserId(), ct));
+    public async Task<ActionResult<List<RecommendationResponse>>> GetAll(
+    [FromQuery] RecommendationQueryParameters query, CancellationToken ct)
+    => Ok(await _service.GetAllAsync(User.GetUserId(), query, ct));
 
     [HttpGet("{id:guid}")]
     public async Task<ActionResult<RecommendationResponse>> GetById(Guid id, CancellationToken ct)

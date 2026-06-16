@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RecAI.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+101abfe97b205a6dda5da497279521fd7c23cea5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3686b3ac1e48fd4afb4c43860684ce16080f7dfd")]
 [assembly: System.Reflection.AssemblyProductAttribute("RecAI.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RecAI.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
