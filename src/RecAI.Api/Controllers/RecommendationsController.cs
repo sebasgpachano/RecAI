@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using RecAI.Api.Extensions;
+using RecAI.Application.DTOs.Common;
 using RecAI.Application.DTOs.Recommendations;
 using RecAI.Application.Interfaces;
 
@@ -16,7 +17,7 @@ public class RecommendationsController : ControllerBase
     public RecommendationsController(IRecommendationService service) => _service = service;
 
     [HttpGet]
-    public async Task<ActionResult<List<RecommendationResponse>>> GetAll(
+    public async Task<ActionResult<PagedResult<RecommendationResponse>>> GetAll(
     [FromQuery] RecommendationQueryParameters query, CancellationToken ct)
     => Ok(await _service.GetAllAsync(User.GetUserId(), query, ct));
 

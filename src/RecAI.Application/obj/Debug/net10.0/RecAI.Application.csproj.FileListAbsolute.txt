@@ -13,3 +13,4 @@ C:\Users\sebas\RecAI\src\RecAI.Application\obj\Debug\net10.0\RecAI.Application.d
 C:\Users\sebas\RecAI\src\RecAI.Application\obj\Debug\net10.0\refint\RecAI.Application.dll
 C:\Users\sebas\RecAI\src\RecAI.Application\obj\Debug\net10.0\RecAI.Application.pdb
 C:\Users\sebas\RecAI\src\RecAI.Application\obj\Debug\net10.0\ref\RecAI.Application.dll
+C:\Users\sebas\RecAI\src\RecAI.Application\obj\Debug\net10.0\RecAI.Application.sourcelink.json

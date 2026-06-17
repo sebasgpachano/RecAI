@@ -15,3 +15,4 @@ C:\Users\sebas\RecAI\src\RecAI.Infrastructure\obj\Debug\net10.0\RecAI.Infrastruc
 C:\Users\sebas\RecAI\src\RecAI.Infrastructure\obj\Debug\net10.0\refint\RecAI.Infrastructure.dll
 C:\Users\sebas\RecAI\src\RecAI.Infrastructure\obj\Debug\net10.0\RecAI.Infrastructure.pdb
 C:\Users\sebas\RecAI\src\RecAI.Infrastructure\obj\Debug\net10.0\ref\RecAI.Infrastructure.dll
+C:\Users\sebas\RecAI\src\RecAI.Infrastructure\obj\Debug\net10.0\RecAI.Infrastructure.sourcelink.json

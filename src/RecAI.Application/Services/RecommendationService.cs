@@ -4,6 +4,7 @@ using RecAI.Application.Exceptions;
 using RecAI.Application.Interfaces;
 using RecAI.Domain.Entities;
 using RecAI.Domain.Enums;
+using RecAI.Application.DTOs.Common;
 
 namespace RecAI.Application.Services;
 
@@ -20,11 +21,15 @@ public class RecommendationService : IRecommendationService
         _logger = logger;
     }
 
-    public async Task<List<RecommendationResponse>> GetAllAsync(
+    public async Task<PagedResult<RecommendationResponse>> GetAllAsync(
     Guid userId, RecommendationQueryParameters query, CancellationToken ct = default)
     {
-        var items = await _repository.GetAllForUserAsync(userId, query, ct);
-        return items.Select(MapToResponse).ToList();
+        var (items, nextCursor) = await _repository.GetPageForUserAsync(userId, query, ct);
+        return new PagedResult<RecommendationResponse>
+        {
+            Items = items.Select(MapToResponse).ToList(),
+            NextCursor = nextCursor
+        };
     }
 
     public async Task<RecommendationResponse> GetByIdAsync(Guid id, Guid userId, CancellationToken ct = default)

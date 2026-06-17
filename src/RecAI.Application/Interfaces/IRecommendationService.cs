@@ -1,10 +1,11 @@
 using RecAI.Application.DTOs.Recommendations;
+using RecAI.Application.DTOs.Common;
 
 namespace RecAI.Application.Interfaces;
 
 public interface IRecommendationService
 {
-    Task<List<RecommendationResponse>> GetAllAsync(
+    Task<PagedResult<RecommendationResponse>> GetAllAsync(
     Guid userId, RecommendationQueryParameters query, CancellationToken ct = default);
     Task<RecommendationResponse> GetByIdAsync(Guid id, Guid userId, CancellationToken ct = default);
     Task<RecommendationResponse> CreateAsync(Guid userId, CreateRecommendationRequest request, CancellationToken ct = default);
